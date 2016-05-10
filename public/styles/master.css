@@ -3,6 +3,8 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto Slab', serif;
+  background-color: rgba(245, 245, 245, 1);
 }
 
 canvas {
@@ -22,11 +24,59 @@ canvas {
   /*width: 960px;*/
 }
 
+#nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  z-index: 100;
+}
+/*#mac {
+  width: 300px;
+  height: 179px;
+}*/
+
 .row {
-  background-color: rgba(255, 255, 255, 0.7);
   padding: 0 10px;
 }
 
+.row:nth-child(1) {
+  /*margin-top: 20px;*/
+}
+
+#links img {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  transition: .8s all ease;
+}
+
+#links img:hover {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  filter: none;
+}
+
+#links {
+  margin: 20px 0;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+img {
+  /*border: 2px solid rgba(0, 0, 0, 0.7);*/
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  /*padding: 10px;*/
+  border: 10px solid rgb(245, 245, 245);
+
+}
+
+img:hover {
+
+}
 .container {
-  
+
 }

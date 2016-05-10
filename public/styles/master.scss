@@ -38,11 +38,26 @@ img {
   }
 }
 
+.title-card {
+  height: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  // display: flex;
+}
+
 #prof-pic {
   height: 188px;
   width: 150px;
+  // position: absolute;
 }
 
+.about-me {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  align-items: flex-end;
+}
 
 #nav {
   background-color: rgba(0, 0, 0, 0.8);
@@ -63,7 +78,7 @@ img {
     -ms-filter: grayscale(100%);
     filter: grayscale(100%);
     filter: gray;
-    transition: .8s all ease;
+    transition: .6s all ease;
 
     &:hover {
       -webkit-filter: none;

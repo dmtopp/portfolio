@@ -18,17 +18,17 @@ window.onload = function() {
 
   window.addEventListener('resize', function() {
     cancelAnimationFrame(app.intervalId);
-    console.log('resize');
+
     app.context.clearRect(0, 0, window.innerWidth, window.innerHeight);
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+
     app.x = 0;
     app.y = window.innerHeight;
+    app.dx = 45;
+    app.dy = 60;
     animationLoop();
   })
-
-
-
 
 }
 
@@ -52,40 +52,16 @@ function logDimensions() {
 
 function animationLoop() {
   app.intervalId = requestAnimationFrame(animationLoop);
-
-
   if (app.intervalId % 5 === 0) {
     app.y = app.y - app.dy;
     app.context.fillStyle = returnRandomRGBA();
     app.context.fillRect(app.x, app.y, app.dx, app.dy);
-
-
     if (app.y < -10) {
       app.y = 0;
       app.dy *= -1;
       app.x = window.innerWidth - app.dx;
     }
-
-
   }
-  // app.context.beginPath();
-  // app.context.moveTo(app.x, app.y);
-  // app.context.strokeStyle = 'rgba(0, 0, 0, 0.2)';
-  // app.context.lineTo(app.x + 1, app.y + 1);
-  // app.context.stroke();
-  // app.context.closePath();
-
-  // app.x += app.dx;
-
-
-  // if (app.x > canvas.width) app.dx *= 0;
-  // else if (app.y < 0) {
-  //   app.x += 45;
-  //   app.y = window.height;
-  // }
-
-
-  // app.context.clearRect(0, 0, window.innerWidth, window.innerHeight);
 }
 
 function drawLines(numLines) {

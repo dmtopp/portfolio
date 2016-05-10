@@ -27,8 +27,12 @@ img {
 
 .row {
   padding: 0 10px; }
-  .row:nth-child(1) {
+  .row:nth-child(2) {
     margin-top: 20px; }
+
+.project {
+  display: flex;
+  align-items: center; }
 
 .title-card {
   height: 100%;
@@ -43,8 +47,16 @@ img {
 .about-me {
   position: absolute;
   bottom: 50px;
+  left: 0px;
   display: flex;
   align-items: flex-end; }
+  .about-me img {
+    display: inline-block; }
+  .about-me h1 {
+    margin: 0; }
+  .about-me .about-me-text {
+    display: inline-block;
+    margin-left: 35px; }
 
 #nav {
   background-color: rgba(0, 0, 0, 0.8);

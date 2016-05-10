@@ -30,6 +30,19 @@ window.onload = function() {
     animationLoop();
   })
 
+
+  var myspaceBtn = document.getElementById('myspace');
+  var madeMySpaceJoke = false;
+
+  myspaceBtn.addEventListener('click', function() {
+    var p = document.createElement('p');
+    p.innerHTML = 'Just kidding, I don\'t have a MySpace anymore...';
+    p.className = 'animated fadeIn';
+    if (!madeMySpaceJoke) {
+      document.getElementById('contact').appendChild(p);
+      madeMySpaceJoke = true;
+    }
+  })
 }
 
 function randomRange(min,max){

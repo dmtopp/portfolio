@@ -4,11 +4,27 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto Slab', serif;
+  color: #464646;
   background-color: whitesmoke;
   background-image: url("../images/sweater.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed; }
+
+a {
+  color: #464646;
+  text-decoration: none; }
+
+.button {
+  height: 30px;
+  border: 1px solid #464646;
+  border-radius: 6px;
+  padding: 4px 20px;
+  text-transform: none;
+  font-size: 14px;
+  color: #464646; }
+  .button:hover {
+    border-color: black; }
 
 canvas {
   position: fixed;
@@ -39,6 +55,12 @@ img {
   max-width: 960px;
   margin: 0 auto;
   position: relative; }
+
+.sweater-link {
+  height: 450;
+  width: 450;
+  position: absolute;
+  margin: 0 auto; }
 
 #prof-pic {
   height: 188px;
@@ -78,5 +100,8 @@ img {
       -moz-filter: none;
       -ms-filter: none;
       filter: none; }
+
+#contact p {
+  display: block; }
 
 /*# sourceMappingURL=master.css.map */

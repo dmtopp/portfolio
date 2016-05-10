@@ -1,136 +1,150 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <title>Could this be a portfolio?</title>
-    <link rel="stylesheet" href="/styles/animate.min.css">
+    <link rel='stylesheet' href='/styles/animate.min.css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/styles/normalize.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="/styles/skeleton.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="/styles/master.css" media="screen" title="no title" charset="utf-8">
+    <link rel='stylesheet' href='/styles/normalize.css' media='screen' title='no title' charset='utf-8'>
+    <link rel='stylesheet' href='/styles/skeleton.css' media='screen' title='no title' charset='utf-8'>
+    <link rel='stylesheet' href='/styles/master.css' media='screen' title='no title' charset='utf-8'>
   </head>
   <body>
-    <canvas id="canvas"></canvas>
-
-    <div class="title-card">
-      <a href="#links"><div class="sweater-link"></div></a>
-      <div class='row about-me'>
-        <img id="prof-pic" src="/images/me.png" title="Look at this cheeseball" />
-        <div class='about-me-text'>
-          <h1 class='animated fadeInRight'>Daniel Topp</h1>
-          <small class='animated fadeInRight'>Sweater-wearing web developer, musician, and math nerd. <span>&darr;</span></small>
+    <span id='top'></span>
+    <canvas id='canvas'></canvas>
+    <a data-scroll href='#links'>
+      <div class='title-card'>
+        <div class='row about-me'>
+          <img id='prof-pic' src='/images/me.png' title='Look at this cheeseball' />
+          <div class='about-me-text'>
+            <h1 class='animated fadeInRight'>Daniel Topp</h1>
+            <p class='animated fadeInRight'>Sweater-wearing web developer, musician, and math nerd. <span>&darr;</span></p>
+          </div>
         </div>
-
       </div>
+    </a>
 
-    </div>
-<!-- <p>I am a guitar-slinging web developer and armchair mathematician from the midwest.  I love learning new things and fusing art, music, and technology.  Let's build something cool together!</p> -->
-    <div class="title-card">
-
-      <div class="row" id="links">
-        <div class="three columns">
-          <a href="#mac">
-            <img src="/images/mac.png" class="u-max-full-width" />
-          </a>
-        </div>
-        <div class="three columns">
-          <a href="#who-what-where">
-            <img src="/images/who-what-where.png" class="u-max-full-width" />
-          </a>
-        </div>
-        <div class="three columns">
-          <a href="#kastanza">
-            <img src="/images/kastanza.png" class="u-max-full-width" />
-          </a>
-        </div>
-        <div class="three columns">
-          <a href="#blocktopus">
-            <img src="/images/blocktopus.png" class="u-max-full-width" />
-          </a>
+    <div class='title-card'>
+      <span id='links'></span>
+      <div class='row'>
+        <div class='ten columns'>
+          <h1>Hey there!</h1>
+          <p>I'm a web developer currently living in Chicago.  I also play a variety of musical instruments.  When I'm not doing either of those things, I like to ride my bike and drink beers on patios.</p>
+          <p>Here's a sample of some of my work.  Click on a picture to learn more!</p>
         </div>
       </div>
 
+      <div class='row links'>
+        <div class='three columns'>
+          <a data-scroll href='#mac'>
+            <img src='/images/mac.png' class='u-max-full-width' />
+          </a>
+        </div>
+        <div class='three columns'>
+          <a data-scroll href='#who-what-where'>
+            <img src='/images/who-what-where.png' class='u-max-full-width' />
+          </a>
+        </div>
+        <div class='three columns'>
+          <a data-scroll href='#kastanza'>
+            <img src='/images/kastanza.png' class='u-max-full-width' />
+          </a>
+        </div>
+        <div class='three columns'>
+          <a data-scroll href='#blocktopus'>
+            <img src='/images/blocktopus.png' class='u-max-full-width' />
+          </a>
+        </div>
+      </div>
+
     </div>
 
-    <a name="mac"></a>
-    <div class="title-card project">
-      <div class="row">
-        <div class="four columns">
-          <img src="/images/mac.png" class="u-max-full-width" />
+    <span id='mac'></span>
+    <div class='title-card project'>
+      <div class='row'>
+        <div class='four columns'>
+          <img src='/images/mac.png' class='u-max-full-width' />
         </div>
-        <div class="eight columns">
+        <div class='eight columns'>
           <h3>Macaroni</h3>
           <p></p>
 
-          <a href="#"><div class='button'>See it</div></a>
-          <a href="#"><div class='button'>Github</div></a>
-          <a href="#links"><div class='button'>Back</div></a>
+          <a href='#'><div class='button'>See it</div></a>
+          <a href='#'><div class='button'>Github</div></a>
+          <a data-scroll href='#links'><div class='button'>Back</div></a>
         </div>
       </div>
     </div>
 
-    <a name="who-what-where"></a>
-    <div class="title-card project">
-      <div class="row">
-        <div class="four columns">
-          <img src="/images/who-what-where.png" class="u-max-full-width" />
+    <span id='who-what-where'></span>
+    <div class='title-card project'>
+      <div class='row'>
+        <div class='four columns'>
+          <img src='/images/who-what-where.png' class='u-max-full-width' />
         </div>
-        <div class="eight columns">
+        <div class='eight columns'>
           <h3>Who/What/Where</h3>
           <p>blah blah who/what/where blah blah blah blah blah who/what/where blah blah blah blah blah who/what/where blah blah blah blah blah who/what/where blah blah blah blah blah who/what/where blah blah blah blah blah who/what/where blah blah blah blah blah who/what/where blah blah blah blah blah who/what/where blah blah blah blah blah who/what/where blah blah blah blah blah who/what/where blah blah blah blah blah who/what/where blah blah blah blah blah who/what/where blah blah blah blah blah who/what/where blah blah blah </p>
-          <a href="#"><div class='button'>See it</div></a>
-          <a href="#"><div class='button'>Github</div></a>
-          <a href="#links"><div class='button'>Back</div></a>
+          <a href='#'><div class='button'>See it</div></a>
+          <a href='#'><div class='button'>Github</div></a>
+          <a data-scroll href='#links'><div class='button'>Back</div></a>
         </div>
       </div>
     </div>
 
-    <a name="kastanza"></a>
-    <div class="title-card project">
-      <div class="row">
-        <div class="four columns">
-          <img src="/images/kastanza.png" class="u-max-full-width" />
+    <span id='kastanza'></span>
+    <div class='title-card project'>
+      <div class='row'>
+        <div class='four columns'>
+          <img src='/images/kastanza.png' class='u-max-full-width' />
         </div>
-        <div class="eight columns">
+        <div class='eight columns'>
           <h3>Kastanza</h3>
           <p>blah blah blah kastaanza blah blah blah blah blah blah kastaanza blah blah blah blah blah blah kastaanza blah blah blah blah blah blah kastaanza blah blah blah blah blah blah kastaanza blah blah blah blah blah blah kastaanza blah blah blah blah blah blah kastaanza blah blah blah blah blah blah kastaanza blah blah blah blah blah blah kastaanza blah blah blah blah blah blah kastaanza blah blah blah blah blah blah kastaanza blah blah blah blah blah blah kastaanza blah blah blah blah blah blah kastaanza blah blah blah blah blah blah kastaanza blah blah blah blah blah blah kastaanza blah blah blah blah blah blah kastaanza blah blah blah blah blah blah kastaanza blah blah blah </p>
-          <a href="#"><div class='button'>See it</div></a>
-          <a href="#"><div class='button'>Github</div></a>
-          <a href="#links"><div class='button'>Back</div></a>
+          <a href='#'><div class='button'>See it</div></a>
+          <a href='#'><div class='button'>Github</div></a>
+          <a data-scroll href='#links'><div class='button'>Back</div></a>
         </div>
       </div>
     </div>
 
-    <a name="blocktopus"></a>
-    <div class="title-card project">
+    <span id='blocktopus'></span>
+    <div class='title-card project'>
 
-      <div class="row">
-        <div class="four columns">
-          <img src="/images/blocktopus.png" class="u-max-full-width" />
+      <div class='row'>
+        <div class='four columns'>
+          <img src='/images/blocktopus.png' class='u-max-full-width' />
         </div>
-        <div class="eight columns">
+        <div class='eight columns'>
           <h3>Blocktopus</h3>
           <p>blah blah blah Blocktopus blah blah blah blah blah blah Blocktopus blah blah blah blah blah blah Blocktopus blah blah blah blah blah blah Blocktopus blah blah blah blah blah blah Blocktopus blah blah blah blah blah blah Blocktopus blah blah blah blah blah blah Blocktopus blah blah blah blah blah blah Blocktopus blah blah blah blah blah blah Blocktopus blah blah blah blah blah blah Blocktopus blah blah blah blah blah blah Blocktopus blah blah blah blah blah blah Blocktopus blah blah blah blah blah blah Blocktopus blah blah blah blah blah blah Blocktopus blah blah blah blah blah blah Blocktopus blah blah blah blah blah blah Blocktopus blah blah blah blah blah blah Blocktopus blah blah blah </p>
-          <a href="#"><div class='button'>See it</div></a>
-          <a href="#"><div class='button'>Github</div></a>
-          <a href="#links"><div class='button'>Back</div></a>
+          <a href='#'><div class='button'>See it</div></a>
+          <a href='#'><div class='button'>Github</div></a>
+          <a data-scroll href='#links'><div class='button'>Back</div></a>
         </div>
       </div>
     </div>
 
-    <div class="title-card project">
-      <div class="row">
-        <div class="twelve columns" id='contact'>
-          <p>Contact:  dmtopp@gmail.com</p>
-          <a href="#"><div class='button'>Github</div></a>
-          <a href="#"><div class='button'>LinkedIn</div></a>
+    <div class='title-card project'>
+      <div class='row'>
+        <div class='twelve columns' id='contact'>
+          <p>Feel free to send me an email anytime at <a href='mailto:dmtopp@gmail.com'>dmtopp@gmail.com</a>!</p>
+          <a href='#'><div class='button'>Github</div></a>
+          <a href='#'><div class='button'>LinkedIn</div></a>
           <div class='button' id='myspace'>MySpace</div>
+          <a data-scroll href='#top'><div class='button'>Back to top</div></a>
+          <br>
+          <br>
+          <p>See ya around.</p>
         </div>
       </div>
     </div>
     <!-- end container -->
 
-
-    <script src="/js/app.js" charset="utf-8"></script>
+    <script src='/js/smooth-scroll.js' charset='utf-8'></script>
+    <script src='/js/app.js' charset='utf-8'></script>
+    <!-- <script>
+      smoothScroll.init();
+    </script> -->
   </body>
 </html>

@@ -7,6 +7,7 @@ var app = {
 
 window.onload = function() {
   console.log('The window is loaded!');
+  smoothScroll.init();
   var canvas = document.getElementById('canvas');
   app.context = canvas.getContext('2d');
 
@@ -36,7 +37,7 @@ window.onload = function() {
 
   myspaceBtn.addEventListener('click', function() {
     var p = document.createElement('p');
-    p.innerHTML = 'Just kidding, I don\'t have a MySpace anymore...';
+    p.innerHTML = 'Just kidding, I don\'t really have a MySpace.';
     p.className = 'animated fadeIn';
     if (!madeMySpaceJoke) {
       document.getElementById('contact').appendChild(p);
@@ -64,6 +65,7 @@ function logDimensions() {
 }
 
 function animationLoop() {
+  console.log('loop');
   app.intervalId = requestAnimationFrame(animationLoop);
   if (app.intervalId % 5 === 0) {
     app.y = app.y - app.dy;
@@ -73,10 +75,8 @@ function animationLoop() {
       app.y = 0;
       app.dy *= -1;
       app.x = window.innerWidth - app.dx;
+    } else if (app.y > window.innerHeight + 250) {
+      cancelAnimationFrame(app.intervalId);
     }
   }
-}
-
-function drawLines(numLines) {
-
 }
